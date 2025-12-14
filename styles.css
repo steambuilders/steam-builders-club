@@ -1,0 +1,245 @@
+/* Basic styling for the STEAM Builders Club website */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #ffffff;
+}
+
+/* Navigation bar */
+header {
+    background-color: #f7f7f7;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: #004a99;
+}
+
+/* Logo image */
+.site-logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 0.5rem;
+    border-radius: 4px;
+    object-fit: contain;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #004a99;
+    font-weight: 600;
+    transition: color 0.2s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #006bbd;
+}
+
+/* Hero section */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 2rem;
+    background-color: #e9f7fc;
+    flex-wrap: wrap;
+}
+
+.hero-content {
+    max-width: 520px;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #004a99;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #555;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 460px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Content sections */
+.content-section {
+    padding: 3rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #004a99;
+}
+
+.content-section h3 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    color: #006bbd;
+}
+
+.content-section p {
+    margin-bottom: 1rem;
+}
+
+.content-section ul {
+    list-style: disc;
+    margin-left: 2rem;
+}
+
+.quote {
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 1rem;
+    color: #006bbd;
+}
+
+/* QR code section */
+.qr-container {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.qr-container img {
+    width: 200px;
+    height: 200px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+/* Placeholder for the QR code when no image is provided */
+.qr-placeholder {
+    width: 200px;
+    height: 200px;
+    border: 2px dashed #aaa;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-size: 0.9rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* Gallery grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Overview section on home page */
+.overview-section {
+    padding: 3rem 2rem;
+    text-align: center;
+    background-color: #f9fafc;
+}
+
+.overview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.overview-item {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.overview-item h3 {
+    color: #004a99;
+    margin-bottom: 0.5rem;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #004a99;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.2s ease-in-out;
+    font-weight: 600;
+}
+
+.button:hover {
+    background-color: #006bbd;
+}
+
+/* Footer */
+footer {
+    background-color: #f7f7f7;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-content,
+    .hero-image {
+        max-width: 100%;
+    }
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    .nav-links li {
+        margin-bottom: 0.5rem;
+    }
+}
